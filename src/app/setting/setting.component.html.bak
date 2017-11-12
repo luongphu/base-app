@@ -1,0 +1,56 @@
+<ons-toolbar>
+  <div class="center">Profiles</div>
+</ons-toolbar>
+<div class="background"></div>
+<ons-row class="profile-wrapper">
+	<ons-col width="60px" class="profile-image-wrapper">
+	  <img src="img/profile-image.jpg" class="profile-image">
+	</ons-col>
+
+	<ons-col>
+	  <div class="profile-name">Hiroshi Sakamoto</div>
+	  <div class="profile-info"><ons-icon class="plan-icon" icon="id-card-o"></ons-icon>  JPN-634934</div>
+	</ons-col>
+
+</ons-row>
+
+<ons-card class="introduction">
+  <div class="title">Self Introduction</div>
+  <div class="content">I live in Tokyo and I am now studying at a university. I am interested in learning new languages so that I will be able to travel the world. I love traveling.I'm looking for a native English speaker to help with my English.In return, I could help you with Japanese.Please feel free to contact me.</div>
+</ons-card>
+
+<ons-list style="border-top: 0;">
+  <ons-list-item modifier="chevron tappable">
+    <div class="prop-desc">
+      <ons-icon icon="fa-map-marker"></ons-icon>
+      Tokyo,Otaku Kamata Station Area
+    </div>
+  </ons-list-item>
+
+  <ons-list-item modifier="chevron tappable">
+    <div class="prop-desc">
+      <ons-icon icon="language"></ons-icon>
+      Japanese,English,Vietnamese
+    </div>
+  </ons-list-item>
+
+  <ons-list-item modifier="chevron tappable">
+    <div class="prop-desc">
+      <ons-icon icon="dollar"></ons-icon>
+      Charge 50$ for onetime
+    </div>
+  </ons-list-item>
+
+  <ons-list-item modifier="chevron tappable">
+    <div class="prop-desc">
+      <ons-icon icon="fa-clock-o"></ons-icon>
+      Self-payment for transportation fee, meal fee 
+    </div>
+  </ons-list-item>
+  <ons-list-item modifier="chevron tappable">
+    <div class="prop-desc">
+      <ons-icon icon="calendar-check-o"></ons-icon>
+      Available on Monday,Wednesday,Friday
+    </div>
+  </ons-list-item>
+</ons-list>

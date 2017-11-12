@@ -1,0 +1,64 @@
+.profile-wrapper {
+  padding: 10px 16px;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: inset 1px rgba(0, 0, 0, 0.3);
+}
+
+.profile-name {
+  font-size: 18px;
+  padding: 4px 0 2px 0;
+}
+
+.profile-info {
+  font-size: 15px;
+  opacity: 0.4;
+}
+
+.profile-card {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 25px 0 10px;
+  line-height: 1.4;
+  background-color: #33393c;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
+}
+.introduction{
+  margin: 0px;
+  padding-top: 8px;
+  border-radius: 0;
+}
+
+.prop-desc {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.prop-label {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-left: auto;
+  padding-right: 40px;
+}
+
+.prop-desc ons-icon {
+  font-size: 14px;
+  vertical-align: -0px;
+  opacity: 0.5;
+}
+
+.title {
+    font-size: 20px;
+}
+.content {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #030303;
+}

@@ -1,0 +1,35 @@
+<ons-toolbar>
+  <div class="center">Message</div>
+  <div class="left">
+    <ons-back-button></ons-back-button>
+  </div>
+</ons-toolbar>
+<div class="content" #content>
+    <div class="chat-page">
+        <section class="chat-card" *ngFor="let msg of messages">
+            <div class="left-card-block" *ngIf="!msg.speaker.me">
+                <div class="left-card-heading" *ngIf="!msg.speaker.me">{{msg.userName}}</div>
+                <div class="left-card-media" *ngIf="!msg.speaker.me">
+                    <div class="left-card-body" *ngIf="!msg.speaker.me">
+                        <div>{{msg.text}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-card-block" *ngIf="msg.speaker.me">
+                <div class="right-card-heading" *ngIf="msg.speaker.me">{{msg.userName}}</div>
+                <div class="right-card-media" *ngIf="msg.speaker.me">
+                    <div class="right-card-body" *ngIf="msg.speaker.me">
+                        <div>{{msg.text}}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="button-card">
+            <div class="input_wrapper">
+                <input type="text" class="input-text" #sendMessage placeholder="Input message here...">
+                <div class="send-btn" (click)="send(sendMessage.value);sendMessage.value='';">SEND</div>
+            </div>
+        </section>
+    </div>
+</div>
+

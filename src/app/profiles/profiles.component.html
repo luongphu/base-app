@@ -1,0 +1,147 @@
+<ons-toolbar>
+  <div class="center">Profiles</div>
+  <div class="left">
+    <ons-back-button></ons-back-button>
+  </div>
+</ons-toolbar>
+<div class="background"></div>
+<ons-row class="profile-wrapper">
+	<ons-col width="60px" class="profile-image-wrapper">
+	  <img src="img/profile-image.jpg" class="profile-image">
+	</ons-col>
+
+	<ons-col>
+	  <div class="profile-name">Tanaka Taro</div>
+	  <div class="profile-info"><ons-icon class="plan-icon" icon="id-card-o"></ons-icon>  JPN-634934</div>
+	</ons-col>
+
+</ons-row>
+
+<ons-list-header>About me</ons-list-header>
+<ons-card class="introduction">
+  <div class="content">I live in Tokyo and I am now studying at a university. I am interested in learning new languages so that I will be able to travel the world. I love traveling.I'm looking for a native English speaker to help with my English.In return, I could help you with Japanese.Please feel free to contact me.</div>
+</ons-card>
+
+<ons-list-header>Conditions</ons-list-header>
+<ons-list style="border-top: 0;">
+  <ons-list-item modifier="chevron tappable" (click)="showLocationSheet()">
+    <div class="prop-desc">
+      <ons-icon icon="fa-map-marker"></ons-icon>
+      Location
+    </div>
+    <div class="prop-label">
+      {{location}}
+    </div>
+  </ons-list-item>
+
+  <ons-list-item modifier="chevron tappable" (click)="showLanguageSheet()">
+    <div class="prop-desc">
+      <ons-icon icon="language"></ons-icon>
+      Language
+    </div>
+    <div class="prop-label">
+      {{language}}
+    </div>
+  </ons-list-item>
+
+  <ons-list-item modifier="chevron tappable" (click)="showTmFeeSheet()">
+    <div class="prop-desc">
+      <ons-icon icon="fa-clock-o"></ons-icon>
+      Train ticket,Meal charge ...etc
+    </div>
+    <div class="prop-label">
+      {{tm_fee}}
+    </div>
+  </ons-list-item>
+
+  <ons-list-item modifier="chevron tappable" (click)="prompt()">
+    <div class="prop-desc">
+      <ons-icon icon="fa-money"></ons-icon>
+      Commission
+    </div>
+    <div class="prop-label">
+      {{commission}}
+    </div>
+  </ons-list-item>
+
+<ons-list-header>Schedule</ons-list-header>
+<ul class="list">
+  <li class="list-item list-item--tappable">
+    <div class="list-item__left">
+      <label class="checkbox">
+        <input type="checkbox" id="monday" class="checkbox__input" name="c" checked="checked">
+        <div class="checkbox__checkmark"></div>
+      </label>
+    </div>
+    <label for="monday" class="list-item__center">
+      Monday
+    </label>
+  </li>
+  <li class="list-item list-item--tappable">
+    <div class="list-item__left">
+      <label class="checkbox">
+        <input type="checkbox" id="tuesday" class="checkbox__input" name="c">
+        <div class="checkbox__checkmark"></div>
+      </label>
+    </div>
+    <label for="tuesday" class="list-item__center">
+      Tuesday
+    </label>
+  </li>
+  <li class="list-item list-item--tappable">
+    <div class="list-item__left">
+      <label class="checkbox">
+        <input type="checkbox" id="wednesday" class="checkbox__input" name="c">
+        <div class="checkbox__checkmark"></div>
+      </label>
+    </div>
+    <label for="wednesday" class="list-item__center">
+      Wednesday
+    </label>
+  </li>
+  <li class="list-item list-item--tappable">
+    <div class="list-item__left">
+      <label class="checkbox">
+        <input type="checkbox" id="thursday" class="checkbox__input" name="c">
+        <div class="checkbox__checkmark"></div>
+      </label>
+    </div>
+    <label for="thursday" class="list-item__center">
+      Thursday
+    </label>
+  </li>
+  <li class="list-item list-item--tappable">
+    <div class="list-item__left">
+      <label class="checkbox">
+        <input type="checkbox" id="friday" class="checkbox__input" name="c">
+        <div class="checkbox__checkmark"></div>
+      </label>
+    </div>
+    <label for="friday" class="list-item__center">
+      Friday
+    </label>
+  </li>
+  <li class="list-item list-item--tappable">
+    <div class="list-item__left">
+      <label class="checkbox">
+        <input type="checkbox" id="saturday" class="checkbox__input" name="c">
+        <div class="checkbox__checkmark"></div>
+      </label>
+    </div>
+    <label for="saturday" class="list-item__center">
+      Saturday
+    </label>
+  </li>
+  <li class="list-item list-item--tappable">
+    <div class="list-item__left">
+      <label class="checkbox">
+        <input type="checkbox" id="sunday" class="checkbox__input" name="c">
+        <div class="checkbox__checkmark"></div>
+      </label>
+    </div>
+    <label for="sunday" class="list-item__center">
+      Sunday
+    </label>
+  </li>
+</ul>
+</ons-list>

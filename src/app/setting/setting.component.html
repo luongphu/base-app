@@ -1,0 +1,54 @@
+<ons-toolbar>
+  <div class="center">Settings</div>
+</ons-toolbar>
+<div class="background"></div>
+<div class="profile-card">
+
+  <img src="img/profile-image.jpg" class="profile-image">
+  <div class="profile-name">Hiroshi Sakamoto</div>
+  <div class="profile-id">JPN-943773494</div>
+  <div class="rating"><div class="rating-num">
+      <ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+      <ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+      <ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+      <ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+      <ons-icon icon="fa-star-half-o" fixed-width="false"></ons-icon>
+      (12)
+  </div></div>
+</div>
+
+<ons-list style="border-top: none"><ons-list-item style="line-height: 1; padding: 0;">
+  <ons-row class="action">
+    <ons-col class="action-col" (click)="editProfiles()">
+      <div class="action-icon"><ons-icon icon="fa-pencil-square-o"></ons-icon></div>
+      <div class="action-label">Edit Profiles</div>
+    </ons-col>
+
+    <ons-col class="action-col">
+      <div class="action-icon"><ons-icon icon="fa-user-secret"></ons-icon></div>
+      <div class="action-label">Premium Plan</div>
+    </ons-col>
+
+    <ons-col class="action-col">
+      <div class="action-icon"><ons-icon icon="fa-ticket"></ons-icon></div>
+      <div class="action-label">Buy Ticket</div>
+    </ons-col>
+
+  </ons-row>
+</ons-list-item></ons-list>
+
+<ons-list modifier="inset" style="margin-top: 10px">
+
+  <ons-list-item modifier="chevron">
+    Feedback to us
+  </ons-list-item>
+
+  <ons-list-item modifier="chevron">
+    Term of Service
+  </ons-list-item>
+
+</ons-list>
+
+<div class="version">
+  <p class="action-label">version 2.1</p>
+</div>
